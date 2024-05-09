@@ -4,7 +4,7 @@ import styles from './Layout.module.css';
 export function Layout() {
 
 	return <div className={styles['layout']}>
-		<div>
+		<div className={styles['content']}>
 			<Outlet />
 		</div>
 		<footer className={styles['footer']}>

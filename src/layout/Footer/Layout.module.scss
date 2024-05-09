@@ -1,12 +1,22 @@
-.footer {
-    display: flex;
-    color: var(--secondary-color);
-    font-family: var(--font);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    justify-content: space-around;
-    border-top: 1px solid #CCC;
-    margin-top: 14.5rem;
+.layout {
+    
+    .content {
+        flex: 1;
+    }
+
+    .footer {
+        display: flex;
+        position: absolute;
+        color: var(--secondary-color);
+        font-family: var(--font);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        justify-content: space-around;
+        border-top: 1px solid #CCC;
+        bottom: 0;
+        width: 100%; 
+        left: 0;
+    }
 }
