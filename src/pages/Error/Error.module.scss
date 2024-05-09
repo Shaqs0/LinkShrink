@@ -1,0 +1,51 @@
+.not_fnd {
+    font-family: var(--font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .name {
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .error_code {
+        color: var(--main-color);
+        font-family: var(--font);
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: -3rem;
+    }
+}
+
+.go_back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8rem;
+
+    .error_info {
+        color: var(--black-color);
+        font-family: var(--font);
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .btn {
+        color: var(--white-color);
+        font-family: var(--font);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 3rem;
+    }
+}

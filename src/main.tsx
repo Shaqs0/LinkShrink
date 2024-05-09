@@ -1,16 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './index.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { Layout } from './layout/Top/Layout';
+import { Layout } from './layout/Footer/Layout';
+import { Error } from './pages/Error/Error';
 
 const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <Layout/>,
 		children: [
-      
+			{
+				path: '*',
+				element: <Error/>
+			}
 		]
-	}
+	},
 
 ]);
 
