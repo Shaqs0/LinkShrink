@@ -1,0 +1,32 @@
+.content {
+    display: flex;
+    font-family: var(--font);
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    flex-direction: column;
+    .text {
+
+        .name {
+            color: var(--black-color);
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .description {
+            color: #808080;
+            width: 1000px;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: -1.25rem;
+        }
+    }
+
+    .input {
+        margin-top: 2.5rem;
+    }
+}

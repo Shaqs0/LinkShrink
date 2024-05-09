@@ -1,0 +1,22 @@
+.input_container {
+    display: flex;
+
+    .input {
+        color: var(--black-color);
+        width: 980px;
+        height: 65px;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        flex-shrink: 0;
+        border-radius: 20px;
+        border: none;
+        padding: 20px;
+
+        &::placeholder{
+            font-size: 20px;
+        }
+    }
+  
+}
