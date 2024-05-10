@@ -3,7 +3,7 @@
 
     .input {
         color: var(--black-color);
-        width: 980px;
+        width: 730px;
         height: 65px;
         font-size: 24px;
         font-style: normal;
@@ -18,5 +18,8 @@
             font-size: 20px;
         }
     }
-  
+
+    .btn {
+        margin-left: 2rem;
+    }
 }

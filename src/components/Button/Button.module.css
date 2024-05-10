@@ -1,4 +1,5 @@
 .big {
+  font-family: var(--font);
   background-color: var(--main-color);
   width: 500px;
   height: 100px;
@@ -6,4 +7,33 @@
   border: none;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+.small {
+  font-family: var(--font);
+  background-color: var(--main-color);
+  width: 200px;
+  height: 100px;
+  color: var(--white-color);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 20px;
+  border: none;
+}
+.small:disabled {
+  width: 200px;
+  height: 100px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 20px;
+  background: #E2E8F1;
+  color: #A6A1B8;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }

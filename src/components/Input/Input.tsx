@@ -17,7 +17,7 @@ export function Input() {
 	return <div>
 		<div className={styles['input_container']}>
 			<input type='text' value={inputValue} onChange={handleInputChange} className= {styles['input']} placeholder='Введите ссылку, которую нужно сократить'></input>
-			<Button onClick={handleButtonClick} disabled={!inputValue} appearence='small'>Сократить</Button>
+			<Button onClick={handleButtonClick} disabled={!inputValue} className={styles['btn']} appearence='small'>Сократить</Button>
 		</div>
 	</div>;
 }
