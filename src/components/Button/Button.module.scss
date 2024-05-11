@@ -12,7 +12,7 @@
     font-family: var(--font);
     background-color: var(--main-color);
     width: 200px;
-    height: 100px;
+    height: 90px;
     color: var(--white-color);
     font-size: 20px;
     font-style: normal;
@@ -23,7 +23,7 @@
     border: none;
     &:disabled {
         width: 200px;
-        height: 100px;
+        height: 90px;
         flex-shrink: 0;
         border-radius: 20px;
         background: #E2E8F1;
@@ -34,4 +34,13 @@
         line-height: normal;
         
     }
+}
+
+.very_small {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid #808080;
+    background: #FFF;
 }
