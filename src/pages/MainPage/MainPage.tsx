@@ -5,6 +5,9 @@ import styles from './MainPage.module.css';
 export function MainPage() {
 
 	return <div>
+		<div className={styles['switch']}>
+			<a href='#'><img src='./public/switcher_theme_icon.svg'></img></a>
+		</div>
 		<div className={styles['content']}>
 			<div className={styles['text']}>
 				<p className={styles['name']}>LinkShrink</p>
@@ -30,6 +33,9 @@ export function MainPage() {
 				</div>
 				<div className={styles['info']}>
 					<p>*ссылка активна в течении 1 дня с момента создания</p>
+				</div>
+				<div className={styles['qr']}>
+					<img src='qr-code.png'></img>
 				</div>
 			</div>
 			<div className={styles['others']}>

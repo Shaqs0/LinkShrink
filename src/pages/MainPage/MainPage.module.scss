@@ -1,9 +1,15 @@
+.switch {
+    display: flex;
+    justify-content: end;
+    margin: 1rem;
+}
+
 .content {
     display: flex;
     font-family: var(--font);
     justify-content: center;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 1rem;
     flex-direction: column;
     .text {
 
@@ -91,6 +97,15 @@
             line-height: normal;
             margin-bottom: -1rem;
     }   
+
+        .qr {
+            display: flex;
+            width: 200px;
+            height: 200px;
+            padding-top: 1.5rem;
+            padding-left: 16.5rem;
+            
+        }
     }
     .others {
         display: flex;
