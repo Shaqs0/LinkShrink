@@ -5,9 +5,6 @@ import styles from './MainPage.module.css';
 export function MainPage() {
 	return (
 		<div>
-			<div className={styles['switch']}>
-				<a href='#'><img src='./public/switcher_theme_icon.svg' alt="Switch Theme" /></a>
-			</div>
 			<div className={styles['content']}>
 				<div className={styles['text']}>
 					<p className={styles['name']}>LinkShrink</p>
