@@ -9,10 +9,10 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        flex-shrink: 0;
         border-radius: 20px;
         border: none;
         padding: 20px;
+        z-index: 1;
 
         &::placeholder{
             font-size: 20px;
