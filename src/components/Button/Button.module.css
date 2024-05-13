@@ -14,7 +14,7 @@
   font-family: var(--font);
   background-color: var(--main-color);
   width: 200px;
-  height: 90px;
+  height: 80px;
   color: var(--white-color);
   font-size: 20px;
   font-style: normal;
@@ -28,7 +28,7 @@
 }
 .small:disabled {
   width: 200px;
-  height: 90px;
+  height: 80px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   border-radius: 20px;

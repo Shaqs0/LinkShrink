@@ -19,4 +19,17 @@
         width: 100%; 
         left: 0;
     }
+
+    .download_link {
+        color: var(--secondary-color);
+        font-family: var(--font);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        &:hover {
+            
+        }
+    }
 }

@@ -9,7 +9,7 @@ export function Layout() {
 		</div>
 		<footer className={styles['footer']}>
 			<p>API</p>
-			<p>Desktop app</p>
+			<p><a href='https://linksshrink.ru/download_file/' className={styles['download_link']}>Desktop app</a></p>
 			<p>ИП “SOON”</p>
 		</footer>
 		
