@@ -1,8 +1,15 @@
 import { Input } from '../../components/Input/Input';
 import Button from '../../components/Button/Button';
 import styles from './MainPage.module.css';
+import { useState } from 'react';
 
 export function MainPage() {
+	const [generatedLink, setGeneratedLink] = useState('');
+
+	const handleLinkGenerated = (link: string) => {
+		setGeneratedLink(link);
+	};
+
 	return (
 		<div>
 			<div className={styles['content']}>
@@ -11,12 +18,12 @@ export function MainPage() {
 					<p className={styles['description']}>помогите клиентам быстро найти вашу страницу в интернете. Благодаря короткой ссылке клиентам не придется видеть длинные url-адреса, занимающие много места.</p>
 				</div>
 				<div className={styles['input']}>
-					<Input/>
+					<Input onLinkGenerated={handleLinkGenerated} />
 				</div>
 				<div className={styles['qr_box']}>
 					<div className={styles['share']}>
 						<img src='./public/link_icon.svg' className={styles['link_icon']}></img>
-						<p>LinkShrink/world-1234/</p>
+						<p>LinkShrink/{generatedLink || 'ABVGD-12345'}</p>
 					</div>
 
 					<div className={styles['btns']}>

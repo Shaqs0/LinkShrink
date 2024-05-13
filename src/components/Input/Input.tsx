@@ -4,26 +4,30 @@ import styles from './Input.module.css';
 import axios from 'axios';
 import { PREFIX } from '../../helpers/API';
 
-export function Input() {
+export interface InputProps {
+  onLinkGenerated: (link: string) => void;
+}
+
+export function Input(props: InputProps) {
 	const [inputValue, setInputValue] = useState('');
+	const [link, setLink] = useState('');
 
 	const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		setInputValue(event.target.value);
 	};
 
 	const handleButtonClick = () => {
-		// Make a request for a user with a given ID
-		axios.get(`${PREFIX}`)
+		axios.get(`${PREFIX}/new_url/?url=${inputValue}`)
 			.then(function (response) {
-				// handle success
+				const generatedLink = response.data.result;
+				setLink(generatedLink);
+				props.onLinkGenerated(generatedLink);
 				console.log(response);
 			})
 			.catch(function (error) {
-				// handle error
 				console.log(error);
 			})
 			.finally(function () {
-				// always executed
 			});
 	};
 
@@ -43,7 +47,7 @@ export function Input() {
 					className={styles['btn']}
 					appearence='small'
 				>
-                    Сократить
+          Сократить
 				</Button>
 			</div>
 		</div>
