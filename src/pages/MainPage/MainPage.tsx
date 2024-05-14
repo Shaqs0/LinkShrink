@@ -13,8 +13,8 @@ export function MainPage() {
 		setGeneratedLink(link);
 	};
 	const handleCopyButtonClick = () => {
-		const linkText = `${PREFIX}${generatedLink}`;
-		copy(`https://${linkText}`);
+		const linkText = `${PREFIX}/${generatedLink}`;
+		copy(linkText);
 		Swal.fire({
 			title: 'Скопировано!',
 			showClass: {
@@ -38,7 +38,7 @@ export function MainPage() {
 		<div>
 			<div className={styles['content']}>
 				<div className={styles['text']}>
-					<p className={styles['name']}>LinkShrink</p>
+					<p className={styles['name']}>Linksshrink</p>
 					<p className={styles['description']}>помогите клиентам быстро найти вашу страницу в интернете. Благодаря короткой ссылке клиентам не придется видеть длинные url-адреса, занимающие много места.</p>
 				</div>
 				<div className={styles['input']}>
@@ -47,7 +47,7 @@ export function MainPage() {
 				<div className={styles['qr_box']}>
 					<div className={styles['share']}>
 						<img src='./public/link_icon.svg' className={styles['link_icon']}></img>
-						<p>LinkShrink/{generatedLink || 'SOAPY-80333'}</p>
+						<p>Linksshrink/{generatedLink || 'SOAPY-80333'}</p>
 					</div>
 
 					<div className={styles['btns']}>
@@ -56,7 +56,7 @@ export function MainPage() {
 							<img src='public/share_icon.svg'></img>
 						</Button>
 						<Button appearence='very_small'>
-							<img src='public/preview_icon.svg'></img>
+							<a href='/preview'><img src='public/preview_icon.svg'></img></a>
 						</Button>
 					</div>
 					<div className={styles['info']}>
@@ -73,6 +73,7 @@ export function MainPage() {
 				<div className={styles['others']}>
 					<p> Получите все возможности сервиса, такие как редактирование qr-code, статистика посещения сайтов, постоянная ссылка, и многое другое <a href='https://linksshrink.ru/download_file/' className={styles['desktop_link']}>скачав desktop программу</a></p>
 				</div>
-			</div>    
+			</div>
+
 		</div>
 	);}

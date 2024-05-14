@@ -5,6 +5,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { Layout } from './layout/Footer/Layout';
 import { Error } from './pages/Error/Error';
 import { MainPage } from './pages/MainPage/MainPage';
+import { Preview } from './pages/Preview/Preview';
 
 const router = createBrowserRouter([
 	{
@@ -14,6 +15,11 @@ const router = createBrowserRouter([
 			{
 				path: '/',
 				element: <MainPage/>
+			},
+
+			{
+				path: '/preview',
+				element: <Preview/>
 			},
 
 			{

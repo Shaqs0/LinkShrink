@@ -11,7 +11,7 @@ export function Error() {
 			</div>
 			<div className={styles['go_back']}>
 				<p className={styles['error_info']}>Данная страница не найдена!</p>
-				<Button appearence='big' className={styles['btn']}>На главную</Button>
+				<a href='/'><Button appearence='big' className={styles['btn']}>На главную</Button></a>
 			</div>
 
 		</div>
