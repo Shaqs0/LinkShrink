@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Button from '../../components/Button/Button';
 import styles from './Error.module.css';
 
@@ -11,7 +12,7 @@ export function Error() {
 			</div>
 			<div className={styles['go_back']}>
 				<p className={styles['error_info']}>Данная страница не найдена!</p>
-				<a href='/'><Button appearence='big' className={styles['btn']}>На главную</Button></a>
+				<Link to='/'><Button appearence='big' className={styles['btn']}>На главную</Button></Link>
 			</div>
 
 		</div>

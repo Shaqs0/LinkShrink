@@ -5,6 +5,7 @@ import { useState } from 'react';
 import copy from 'copy-to-clipboard';
 import Swal from 'sweetalert2';
 import { PREFIX } from '../../helpers/API';
+import { Link } from 'react-router-dom';
 
 export function MainPage() {
 	const [generatedLink, setGeneratedLink] = useState('');
@@ -56,7 +57,9 @@ export function MainPage() {
 							<img src='public/share_icon.svg'></img>
 						</Button>
 						<Button appearence='very_small'>
-							<a href='/preview'><img src='public/preview_icon.svg'></img></a>
+							<Link to={'/preview'}>
+								<img src='public/preview_icon.svg' alt="Preview" />
+							</Link>
 						</Button>
 					</div>
 					<div className={styles['info']}>
