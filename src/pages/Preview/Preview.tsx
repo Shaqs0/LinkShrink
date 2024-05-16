@@ -1,8 +1,11 @@
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styles from './Preview.module.css';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../store/store';
 
 export function Preview() {
-	const { generatedLink } = useParams<{ generatedLink: string }>();
+	const generatedLink = useSelector((state: RootState) => state.link.generatedLink);
+
 
 	return <div>
 		<div className={styles['logo']}> 
@@ -11,7 +14,7 @@ export function Preview() {
 		</div>
 		<div className={styles['preview']}>
 			<p className={styles['mod']}>Preview режим</p>
-			<p className={styles['link']}>Linksshrink/{generatedLink || 'SOAPY-80333'}</p>
+			<p className={styles['link']}>Linksshrink/{generatedLink ||'SOAPY-80333'}</p>
 			<div className={styles['qr']}>
 				<img src="public/qr-code.png" alt="Default QR Code" />
 			</div>
