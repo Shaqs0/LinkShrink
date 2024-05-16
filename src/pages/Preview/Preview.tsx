@@ -14,11 +14,14 @@ export function Preview() {
 		</div>
 		<div className={styles['preview']}>
 			<p className={styles['mod']}>Preview режим</p>
-			<p className={styles['link']}>Linksshrink/{generatedLink ||'SOAPY-80333'}</p>
+			<p className={styles['link']}>Linksshrink/{generatedLink ||'WOULD-72071'}</p>
 			<div className={styles['qr']}>
-				<img src="public/qr-code.png" alt="Default QR Code" />
+				{generatedLink ? (
+					<img src={`https://linksshrink.ru/${generatedLink}/qr-code-max`} alt="QR Code" />
+				) : (
+					<img src="public/qr-code-max.png" alt="Default QR Code" />
+				)}
 			</div>
 		</div>
-        
 	</div>;
 }

@@ -21,5 +21,5 @@ const linkSlice = createSlice({
 });
 
 
-export const { setLink } = linkSlice.actions;
 export default linkSlice.reducer;
+export const { setLink } = linkSlice.actions;
