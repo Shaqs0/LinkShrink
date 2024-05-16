@@ -16,7 +16,7 @@ export function MainPage() {
 	const dispatch = useDispatch();
 
 	useEffect(() => {
-		const savedState = loadState(LINK_PERSISTENT_STATE);
+		const savedState = loadState<{ generatedLink: string, qrCode: string }>(LINK_PERSISTENT_STATE);
 		if (savedState) {
 			setGeneratedLink(savedState.generatedLink);
 			setQrCode(savedState.qrCode); 
@@ -69,7 +69,7 @@ export function MainPage() {
 				</div>
 				<div className={styles['qr_box']}>
 					<div className={styles['share']}>
-						<img src='./public/link_icon.svg' className={styles['link_icon']}></img>
+						<img src='./public/link_icon.svg' className={styles['link_icon']} alt="Link icon"></img>
 						<p>Linksshrink/{generatedLink || 'WOULD-72071'}</p>
 					</div>
 
@@ -78,7 +78,7 @@ export function MainPage() {
                             Копировать
 						</Button>
 						<Button appearence='very_small'>
-							<img src='public/share_icon.svg'></img>
+							<img src='public/share_icon.svg' alt="Share icon"></img>
 						</Button>
 						<Button appearence='very_small'>
 							<Link to={'/preview'}>
@@ -106,3 +106,4 @@ export function MainPage() {
 		</div>
 	);
 }
+

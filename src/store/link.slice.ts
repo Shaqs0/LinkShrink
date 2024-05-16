@@ -4,10 +4,12 @@ export const LINK_PERSISTENT_STATE = 'linkData';
 
 interface LinkState {
     generatedLink: string;
+	qrCode: string;
 }
 
 const initialState: LinkState = {
 	generatedLink: '',
+	qrCode: '',
 };
 
 const linkSlice = createSlice({
@@ -17,9 +19,11 @@ const linkSlice = createSlice({
 		setLink(state, action: PayloadAction<string>) {
 			state.generatedLink = action.payload;
 		},
+		setQrCode(state, action: PayloadAction<string>) {
+			state.qrCode = action.payload;
+		},
 	},
 });
 
-
 export default linkSlice.reducer;
-export const { setLink } = linkSlice.actions;
+export const { setLink, setQrCode } = linkSlice.actions;

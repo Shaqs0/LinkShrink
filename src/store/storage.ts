@@ -4,7 +4,7 @@ export function loadState<T>(key: string): T | undefined {
 		if (!jsonState) {
 			return undefined;
 		}
-		return JSON.parse(jsonState);
+		return JSON.parse(jsonState) as T;
 	} catch (e) {
 		console.error(e);
 		return undefined;
@@ -15,4 +15,3 @@ export function saveState<T>(state: T, key: string) {
 	const stringState = JSON.stringify(state);
 	localStorage.setItem(key, stringState);
 }
-
