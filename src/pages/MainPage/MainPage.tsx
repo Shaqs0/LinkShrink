@@ -10,11 +10,25 @@ import copy from 'copy-to-clipboard';
 import Swal from 'sweetalert2';
 import { PREFIX } from '../../helpers/API';
 import { Link } from 'react-router-dom';
+import { SociaMediaPopup } from '../../components/SocialMediaPopup/SocialMediaPopup';
+
+interface State {
+	isPopupVisible: boolean;
+  }
 
 export function MainPage() {
 	const [generatedLink, setGeneratedLink] = useState('');
 	const [qrCode, setQrCode] = useState(''); 
 	const dispatch = useDispatch();
+	const [state, setState] = useState<State>({ isPopupVisible: false });
+
+	const handleMouseEnter = () => {
+		setState({ ...state, isPopupVisible: true });
+	};
+  
+	const handleMouseLeave = () => {
+		setState({ ...state, isPopupVisible: false });
+	};
 
 	useEffect(() => {
 		const savedState = loadState<{ generatedLink: string, qrCode: string }>(LINK_PERSISTENT_STATE);
@@ -77,9 +91,17 @@ export function MainPage() {
 						<Button appearence='small' className={styles['btn_copy']} onClick={handleCopyButtonClick}>
                             Копировать
 						</Button>
-						<Button appearence='very_small'>
-							<img src='public/share_icon.svg' alt="Share icon"></img>
-						</Button>
+						<div
+							onMouseEnter={handleMouseEnter}
+							onMouseLeave={handleMouseLeave}
+						>
+							<Button
+								appearence='very_small'
+							>
+								<img src='public/share_icon.svg' alt="Share icon"></img>
+							</Button>
+							{state.isPopupVisible && <SociaMediaPopup/>}
+						</div>
 						<Button appearence='very_small'>
 							<Link to={'/preview'}>
 								<img src='public/preview_icon.svg' alt='Preview' />
@@ -96,7 +118,7 @@ export function MainPage() {
 				<div className={styles['others']}>
 					<p>
                         Получите все возможности сервиса, такие как редактирование qr-code, статистика посещения сайтов,
-                        постоянная ссылка, и многое другое{' '}
+                        постоянная ссылка, и многое другое
 						<Link to='https://linksshrink.ru/download_file/' className={styles['desktop_link']}>
                             скачав desktop программу
 						</Link>
