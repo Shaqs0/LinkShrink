@@ -1,0 +1,29 @@
+body {
+    font-family: var(--font);
+}
+
+.my_custom_popup {
+    background-color: var(color-white); 
+    border-radius: 10px;       
+    padding: 20px;             
+}
+
+.my_custom_title {
+    color: var(--black-color);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.my_custom_content {
+    color: #ffffff;
+}
+
+.my_custom_confirm_button {
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    font-size: medium;
+}

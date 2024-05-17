@@ -5,6 +5,7 @@ import { loadState, saveState } from '../../store/storage';
 import { Input } from '../../components/Input/Input';
 import Button from '../../components/Button/Button';
 import styles from './MainPage.module.css';
+import './SweetAlert.css';
 import copy from 'copy-to-clipboard';
 import Swal from 'sweetalert2';
 import { PREFIX } from '../../helpers/API';
@@ -37,21 +38,20 @@ export function MainPage() {
 		copy(linkText);
 		Swal.fire({
 			title: 'Скопировано!',
-			showClass: {
-				popup: `
-                    animate__animated
-                    animate__fadeInUp
-                    animate__faster
-                `,
+			text: 'Ваш текст был успешно скопирован.',
+			icon: 'success',
+			customClass: {
+				popup: 'my_custom_popup',
+				title: 'my_custom_title',
+				htmlContainer: 'my_custom_content',
+				confirmButton: 'my_custom_confirm_button',
 			},
-			hideClass: {
-				popup: `
-                    animate__animated
-                    animate__fadeOutDown
-                    animate__faster
-                `,
-			},
+			buttonsStyling: false,  
+			showCancelButton: false,
+			confirmButtonText: 'OK',
 		});
+		
+		
 	};
 
 	return (
@@ -106,4 +106,3 @@ export function MainPage() {
 		</div>
 	);
 }
-
