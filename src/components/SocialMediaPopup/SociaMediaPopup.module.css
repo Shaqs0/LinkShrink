@@ -1,14 +1,70 @@
 .popup {
   position: absolute;
   background-color: white;
-  border: 1px solid gray;
-  padding: 10px;
-  z-index: 999;
+  padding: 20px;
+  height: 155px;
+  width: 250px;
+  border-radius: 20px;
+  border: none;
+  -webkit-box-shadow: 1px 1px 10px rgb(80, 79, 79);
+          box-shadow: 1px 1px 10px rgb(80, 79, 79);
+}
+.popup .text {
+  color: #808080;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: -0.1rem;
 }
 .popup .socialMediaList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   list-style-type: none;
   padding: 0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.popup .socialMediaList a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: var(--black-color);
+}
+.popup .socialMediaList::visited {
+  text-decoration: none;
 }
 .popup .socialMediaList li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 5px;
+  height: 35px;
+  width: 100%;
+}
+.popup .socialMediaList li:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+  background: #D9D9D9;
+  width: 100%;
+  height: 35px;
+}
+.popup .socialMediaList img {
+  margin-right: 5px;
 }

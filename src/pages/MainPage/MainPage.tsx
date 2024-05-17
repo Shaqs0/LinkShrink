@@ -95,14 +95,14 @@ export function MainPage() {
 							onMouseEnter={handleMouseEnter}
 							onMouseLeave={handleMouseLeave}
 						>
-							<Button
+							<Button className={styles['btn_share']}
 								appearence='very_small'
 							>
 								<img src='public/share_icon.svg' alt="Share icon"></img>
 							</Button>
 							{state.isPopupVisible && <SociaMediaPopup/>}
 						</div>
-						<Button appearence='very_small'>
+						<Button appearence='very_small' className={styles['btn_preview']}>
 							<Link to={'/preview'}>
 								<img src='public/preview_icon.svg' alt='Preview' />
 							</Link>
@@ -118,9 +118,9 @@ export function MainPage() {
 				<div className={styles['others']}>
 					<p>
                         Получите все возможности сервиса, такие как редактирование qr-code, статистика посещения сайтов,
-                        постоянная ссылка, и многое другое
+                        постоянная ссылка, и многое другое 
 						<Link to='https://linksshrink.ru/download_file/' className={styles['desktop_link']}>
-                            скачав desktop программу
+							<span>cкачав desktop программу</span>
 						</Link>
 					</p>
 				</div>

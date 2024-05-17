@@ -26,4 +26,9 @@ body {
     height: 40px;
     border: none;
     font-size: medium;
+    cursor: pointer;
+}
+
+.my_custom_confirm_button:hover {
+    background-color: #6c26a8;
 }

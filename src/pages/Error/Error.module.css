@@ -63,3 +63,6 @@
   line-height: normal;
   margin-top: 3rem;
 }
+.go_back .btn:hover {
+  background-color: #6c26a8;
+}

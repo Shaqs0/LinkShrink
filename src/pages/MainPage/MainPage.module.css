@@ -89,11 +89,20 @@
 .content .qr_box .btns > * {
   margin-right: 1rem;
 }
+.content .qr_box .btns .btn_share:hover {
+  background-color: rgb(241, 241, 241);
+}
+.content .qr_box .btns .btn_preview:hover {
+  background-color: rgb(241, 241, 241);
+}
 .content .qr_box .btns .btn_copy {
   width: 200px;
   height: 60px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+.content .qr_box .btns .btn_copy:hover {
+  background-color: #6c26a8;
 }
 .content .qr_box .info {
   display: -webkit-box;
@@ -142,5 +151,8 @@
 }
 .content .others .desktop_link {
   color: var(--main-color);
-  text-decoration: none;
+  margin-left: 0.3rem;
+}
+.content .others .desktop_link:hover {
+  color: #601f99;
 }

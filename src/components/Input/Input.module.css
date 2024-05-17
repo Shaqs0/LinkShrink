@@ -16,6 +16,9 @@
   padding: 20px;
   z-index: 1;
 }
+.input_container .input:focus {
+  outline: none;
+}
 .input_container .input::-webkit-input-placeholder {
   font-size: 20px;
 }
@@ -33,4 +36,10 @@
 }
 .input_container .btn {
   margin-left: 2rem;
+}
+.input_container .btn:disabled:hover {
+  background-color: none;
+}
+.input_container .btn:not(:disabled):hover {
+  background-color: #6c26a8;
 }
