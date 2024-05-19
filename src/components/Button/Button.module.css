@@ -13,7 +13,7 @@
 .small {
   font-family: var(--font);
   background-color: var(--main-color);
-  width: 200px;
+  width: 13rem;
   height: 80px;
   color: var(--white-color);
   font-size: 20px;
@@ -27,7 +27,7 @@
   cursor: pointer;
 }
 .small:disabled {
-  width: 200px;
+  width: 13rem;
   height: 80px;
   -ms-flex-negative: 0;
       flex-shrink: 0;

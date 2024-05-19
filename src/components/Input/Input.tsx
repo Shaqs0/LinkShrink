@@ -10,7 +10,6 @@ export interface InputProps {
 
 export function Input(props: InputProps) {
 	const [inputValue, setInputValue] = useState('');
-	const [link, setLink] = useState('');
 
 	const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		setInputValue(event.target.value);
@@ -20,14 +19,11 @@ export function Input(props: InputProps) {
 		axios.get(`${PREFIX}/new_url/?url=${inputValue}`)
 			.then(function (response) {
 				const generatedLink = response.data.result;
-				setLink(generatedLink);
 				props.onLinkGenerated(generatedLink);
 				console.log(response);
 			})
 			.catch(function (error) {
 				console.log(error);
-			})
-			.finally(function () {
 			});
 	};
 
