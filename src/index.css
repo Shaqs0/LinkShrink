@@ -6,9 +6,20 @@
   --white-color: #FFF;
   --main-color: #7B2CBF;
   --secondary-color: #B3B3B3;
+  --background-color: #EFF2F7;
+  --text-color: #000000;
 }
 
 body {
   background: #EFF2F7;
 }
 
+[data-theme='dark'] {
+  --background-color: #000000;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
