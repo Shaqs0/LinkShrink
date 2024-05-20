@@ -53,3 +53,14 @@
         }
     }
 }
+
+@media (max-width: 500px) {
+    .go_back {
+        .error_info {
+            font-size: 38px;
+        }
+        .btn {
+            width: 350px;
+        }
+    }
+}

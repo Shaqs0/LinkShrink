@@ -66,3 +66,12 @@
 .go_back .btn:hover {
   background-color: #6c26a8;
 }
+
+@media (max-width: 500px) {
+  .go_back .error_info {
+    font-size: 38px;
+  }
+  .go_back .btn {
+    width: 350px;
+  }
+}
