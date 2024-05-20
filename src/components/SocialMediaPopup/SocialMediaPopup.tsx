@@ -12,17 +12,17 @@ export function SociaMediaPopup() {
 			<p className={styles.text}>Поделиться ссылкой</p>
 			<ul className={styles.socialMediaList}>
 				<li>
-					<Link to={`https://telegram.me/share/url?url=${generatedLink}`}>
+					<Link to={`https://telegram.me/share/url?url=linksshrink.ru/${generatedLink}`}>
 						<img src="public/tg_icon.svg" alt="Telegram Icon" />Телеграм
 					</Link>
 				</li>
 				<li>
-					<Link to={`https://vk.com/share.php?url=${generatedLink}`}>
+					<Link to={`https://vk.com/share.php?url=linksshrink.ru/${generatedLink}`}>
 						<img src="public/vk_icon.svg" alt="VK Icon" />Вконтакте
 					</Link>
 				</li>
 				<li>
-					<Link to={`https://connect.ok.ru/offer?url=${generatedLink}`}>
+					<Link to={`https://connect.ok.ru/offer?url=linksshrink.ru/${generatedLink}`}>
 						<img src="public/ok_icon.svg" alt="OK Icon" />Одноклассники
 					</Link>
 				</li>

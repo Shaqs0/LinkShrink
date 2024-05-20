@@ -333,7 +333,7 @@
         
             .info {
                 display: flex;
-                color: #ffffff;
+                color: black;
                 justify-content: center;
                 font-size: 16px;
                 font-style: normal;
@@ -343,6 +343,7 @@
                 margin-right: 10rem;
                 margin-bottom: 1rem;
                 text-wrap: nowrap;
+                opacity: 0;
             }   
         
             .qr {
@@ -444,7 +445,7 @@
         
             .info {
                 display: flex;
-                color: #ffffff;
+                color: black;
                 justify-content: center;
                 font-size: 16px;
                 font-style: normal;
@@ -454,6 +455,7 @@
                 margin-right: 4rem;
                 margin-bottom: 1rem;
                 text-wrap: nowrap;
+                opacity: 0;
             }   
         
             .qr {
@@ -554,7 +556,7 @@
         
             .info {
                 display: flex;
-                color: #ffffff;
+                color: black;
                 justify-content: center;
                 font-size: 14px;
                 font-style: normal;
@@ -564,6 +566,7 @@
                 margin-right: 1rem;
                 margin-bottom: 1rem;
                 text-wrap: nowrap;
+                opacity: 0;
             }   
         
             .qr {
@@ -665,7 +668,7 @@
         
             .info {
                 display: flex;
-                color: #ffffff;
+                color: black;
                 justify-content: center;
                 font-size: 14px;
                 font-style: normal;
@@ -675,6 +678,7 @@
                 margin-right: -1rem;
                 margin-bottom: 1rem;
                 text-wrap: nowrap;
+                opacity: 0;
             }   
         
             .qr {
@@ -708,8 +712,13 @@
         }
 
         .text {
+            .name {
+                margin-left: 3rem;
+            }
             .description {
-                width: 370px;
+                font-size: 18px;
+                width: 300px;
+                margin-left: 3rem;
             }
         }
 
@@ -777,7 +786,7 @@
         
             .info {
                 display: flex;
-                color: #ffffff;
+                color: black;
                 justify-content: center;
                 font-size: 12px;
                 font-style: normal;
@@ -787,6 +796,7 @@
                 margin-right: 0.65rem;
                 margin-bottom: 1rem;
                 text-wrap: nowrap;
+                opacity: 0;
             }   
         
             .qr {

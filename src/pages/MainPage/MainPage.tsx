@@ -112,7 +112,7 @@ export function MainPage() {
 						<p>*ссылка активна в течении 1 дня с момента создания</p>
 					</div>
 					<div className={styles['qr']}>
-						{qrCode ? <img src='public/qr-code.png' alt='QR Code' /> : <img src='public/qr-code.png' alt='Default QR Code' />}
+						{qrCode ? <img src={qrCode} alt='QR Code' /> : <img src='public/qr-code.png' alt='Default QR Code' />}
 					</div>
 				</div>
 				<div className={styles['others']}>

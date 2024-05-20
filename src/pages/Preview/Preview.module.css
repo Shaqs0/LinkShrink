@@ -53,3 +53,38 @@
   line-height: normal;
   margin-top: 5rem;
 }
+
+@media (max-width: 830px) {
+  .preview .mod {
+    margin-top: 1rem;
+    font-size: 24px;
+  }
+  .preview .link {
+    margin-top: -1rem;
+  }
+}
+@media (max-width: 570px) {
+  .preview .mod {
+    margin-top: 1rem;
+    font-size: 24px;
+  }
+  .preview .link {
+    font-size: 32px;
+    margin-top: -1rem;
+  }
+  .preview .qr img {
+    height: 400px;
+    width: 400px;
+    margin-top: 2.5rem;
+  }
+}
+@media (max-width: 448px) {
+  .preview .link {
+    font-size: 24px;
+  }
+  .preview .qr img {
+    height: 330px;
+    width: 330px;
+    margin-top: 6rem;
+  }
+}
