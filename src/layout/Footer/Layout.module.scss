@@ -1,12 +1,19 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 .layout {
-    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
     .content {
         flex: 1;
     }
 
     .footer {
         display: flex;
-        position: absolute;
         color: var(--secondary-color);
         font-family: var(--font);
         font-size: 14px;
@@ -15,9 +22,8 @@
         line-height: normal;
         justify-content: space-around;
         border-top: 1px solid #CCC;
-        bottom: 0;
-        width: 100%; 
-        left: 0;
+        width: 100%;
+        margin-top: auto; /* This makes sure the footer is pushed to the bottom */
     }
 
     .download_link {
@@ -32,4 +38,8 @@
             color: #a0a0a0;
         }
     }
+}
+
+@media (max-height: 900px) {
+    /* Additional styles if needed for specific screen heights */
 }

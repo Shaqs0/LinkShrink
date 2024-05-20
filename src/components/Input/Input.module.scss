@@ -35,3 +35,60 @@
         }
     }
 }
+
+@media (max-width: 543px) {
+    .input_container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .input {
+            font-size: 18px;
+            width: 26rem;
+        }
+    }
+
+    .btn {
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    
+}
+
+@media (max-width: 453px) {
+    .input_container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .input {
+            font-size: 18px;
+            width: 23rem;
+        }
+    }
+
+    .btn {
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    
+}
+
+@media (max-width: 407px) {
+    .input_container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .input {
+            font-size: 18px;
+            width: 20rem;
+        }
+    }
+
+    .btn {
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    
+}

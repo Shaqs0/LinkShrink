@@ -47,3 +47,39 @@
     background: #FFF;
     cursor: pointer;
 }
+
+@media (max-width: 640px) {
+    .small {
+        width: 140px;
+        font-size: 16px;
+
+        &:disabled {
+            width: 140px;
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 543px) {
+    .small {
+        width: 230px;
+        font-size: 18px;
+
+        &:disabled {
+            width: 230px;
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 453px) {
+    .small {
+        width: 200px;
+        font-size: 18px;
+
+        &:disabled {
+            width: 200px;
+            font-size: 18px;
+        }
+    }
+}
